@@ -15,7 +15,22 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 var card = document.querySelectorAll('.main__products--card'),
     buttons = document.querySelectorAll('.right-menu__item--button'),
-    menuItems = document.querySelectorAll('.right-menu__item');
+    menuItems = document.querySelectorAll('.right-menu__item'),
+    menuButtons = document.querySelectorAll('.right-menu__item--button');
+
+(function getParams(url) {
+  var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+  var queryFilter = queryString.split('=')[1];
+
+  window.onload = function () {
+    for (var i = 0; i < menuButtons.length; i++) {
+      if (queryFilter == menuButtons[i].dataset['cat']) {
+        menuButtons[i].click();
+      }
+    }
+  };
+})();
+
 document.querySelector('.right-menu').addEventListener('click', function (event) {
   if (event.target.tagName !== "DIV") return false;
 
@@ -26,7 +41,6 @@ document.querySelector('.right-menu').addEventListener('click', function (event)
   ;
   event.target.parentNode.classList.add('is-active');
   var buttonCat = event.target.dataset['cat'];
-  console.log(buttonCat);
 
   for (var _i = 0; _i < card.length; _i++) {
     card[_i].classList.remove('hide');
