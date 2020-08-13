@@ -3805,7 +3805,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .product__right--name {
     padding: 0;
-    margin: 0;
+    margin: 150px 0 0 0;
     font-size: 55px;
   }
   .product__right--desc {
