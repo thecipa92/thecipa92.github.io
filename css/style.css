@@ -1963,6 +1963,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (min-width: 480px) and (orientation: portrait) {
   /* Product */
+  .product__left--img {
+    width: 40%;
+  }
   .product__right--category {
     padding: 25px 25px 0;
   }
@@ -2043,7 +2046,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   /* Product */
   .product__left--img {
-    width: 40%;
+    width: 35%;
   }
   .product__right {
     height: 56vh;
@@ -2190,10 +2193,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 0 0 35px;
   }
   .right-menu__checkbox:not(checked) + .right-menu__circle > .right-menu__circle--row::before {
-    margin: -6px 0 0 0;
+    margin: -5px 0 0 0;
   }
   .right-menu__checkbox:not(checked) + .right-menu__circle > .right-menu__circle--row::after {
-    margin: 6px 0 0 0;
+    margin: 5px 0 0 0;
   }
   /* Categories */
   .main__products {
@@ -2300,6 +2303,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 20px;
     margin: 0;
   }
+  .product__left--img {
+    width: 30%;
+  }
   .product__rec--text {
     font-size: 14px;
   }
@@ -2349,8 +2355,8 @@ input[type=number]::-webkit-outer-spin-button {
   .product__right--up {
     top: 16px;
     right: 14px;
-    border-bottom: 10px solid gray;
     border-right: 10px solid transparent;
+    border-bottom: 10px solid gray;
     border-left: 10px solid transparent;
   }
   .product__right--down {
@@ -2417,13 +2423,37 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0 100px 0 155px;
   }
   /* Product */
+  .left-side__product {
+    width: 100%;
+  }
+  .left-side__product--logo {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 15px;
+  }
+  .left-side__product--home {
+    width: 20px;
+    height: 20px;
+  }
+  .left-side__product--basket {
+    width: 20px;
+    height: 20px;
+  }
+  .left-side__product--search {
+    width: 20px;
+    height: 20px;
+  }
+  .left-side__down-buttons--downloads {
+    width: 20px;
+    height: 20px;
+  }
   .product__left--likes {
     margin: 5px 0 0 0;
     font-size: 26px;
   }
   .product__left--img {
-    width: 35%;
-    height: 80%;
+    width: 30%;
+    height: 72%;
   }
   .product__left--left-contr {
     margin: 0 0 0 25px;
@@ -2457,6 +2487,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 30px;
   }
   .product__right--info {
+    height: calc(100% - 42%);
     margin: 1.5em 0 0 0;
   }
   .product__rec--text {
@@ -3231,7 +3262,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 100px;
   }
   .product__left--img {
-    width: 45%;
+    top: 0;
+    width: 70%;
+    -webkit-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
   }
   .product__right--title {
     font-size: 52px;
@@ -3240,7 +3275,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 32px;
   }
   .product__right--name {
-    margin-top: .8em;
+    margin-top: .4em;
     font-size: 52px;
   }
   .product__right--desc {
@@ -3312,10 +3347,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 1300px) and (orientation: landscape) {
-  /* Categories */
-  .main {
-    padding: 0 400px 0 200px;
-  }
   /* Index */
   .right-menu__circle {
     top: 20px;
@@ -3334,6 +3365,16 @@ input[type=number]::-webkit-outer-spin-button {
   .right-menu__circle--row::after {
     width: 30px;
     height: 3px;
+  }
+  .right-menu__checkbox:not(checked) + .right-menu__circle > .right-menu__circle--row::before {
+    margin: -6px 0 0 0;
+  }
+  .right-menu__checkbox:not(checked) + .right-menu__circle > .right-menu__circle--row::after {
+    margin: 6px 0 0 0;
+  }
+  /* Categories */
+  .main {
+    padding: 0 400px 0 200px;
   }
   .main__products--img {
     width: 193px;
@@ -3412,6 +3453,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (min-width: 1770px) and (orientation: landscape) {
   /* Product */
+  .product__left--img {
+    width: 60%;
+  }
   .product__right {
     padding-left: 15px;
   }
@@ -3436,7 +3480,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 15px;
   }
   .product__right--name {
-    margin-top: 1em;
+    margin-top: .5em;
     font-size: 75px;
   }
   .product__right--desc {
