@@ -3184,20 +3184,15 @@ input[type=number]::-webkit-outer-spin-button {
 /* Descktop */
 @media (min-width: 1024px) and (orientation: landscape) {
   /* Index */
+  .left-side {
+    width: 144px;
+  }
+  .left-side__up-buttons {
+    margin: 25vh 0 0 0;
+  }
   .left-side__up-buttons--logo {
     width: 50px;
     height: 50px;
-  }
-  /* Categories */
-  .main {
-    padding-left: 150px;
-  }
-  .main__products--list {
-    margin-top: 50px;
-  }
-  /* Product */
-  .left-side {
-    width: 144px;
   }
   .left-side__up-buttons--home {
     width: 40px;
@@ -3206,12 +3201,12 @@ input[type=number]::-webkit-outer-spin-button {
   .left-side__up-buttons--basket {
     width: 40px;
     height: 40px;
-    margin: 25px auto 0;
+    margin: 50px auto 0;
   }
   .left-side__up-buttons--search {
     width: 40px;
     height: 40px;
-    margin: 25px auto 0;
+    margin: 50px auto 0;
   }
   .left-side__down-buttons {
     width: 100%;
@@ -3223,6 +3218,14 @@ input[type=number]::-webkit-outer-spin-button {
     height: 40px;
     margin: 0 auto;
   }
+  /* Categories */
+  .main {
+    padding-left: 150px;
+  }
+  .main__products--list {
+    margin-top: 50px;
+  }
+  /* Product */
   .product__left {
     width: calc(50% - 100px);
     margin-left: 100px;
