@@ -34,7 +34,9 @@ function cardMedia() {
         cardVisible[_i].style.flexDirection = 'row';
         cardVisible[_i].style.justifyContent = 'flex-start';
         cardVisible[_i].style.alignItems = 'center';
+        cardVisible[_i].style.paddingRight = '50px';
         cardVisible[_i].style.margin = '0';
+        cardImage[_i].style.margin = '15px auto 0';
       } else if (_i % 5 === 2) {
         cardVisible[_i].style.width = 'calc(25% - 15px)';
         cardVisible[_i].style.margin = '30px 30px 30px 0';
@@ -46,7 +48,7 @@ function cardMedia() {
         cardVisible[_i].style.flexDirection = 'row';
         cardVisible[_i].style.alignItems = 'center';
         cardVisible[_i].style.justifyContent = 'flex-start';
-        cardImage[_i].style.margin = '0 50px';
+        cardImage[_i].style.margin = '15px 50px 0';
       } else if (_i % 5 === 4) {
         cardVisible[_i].style.width = 'calc(25% - 15px)';
         cardVisible[_i].style.margin = '30px 0';
